@@ -1,0 +1,60 @@
+ [user]
+    name = Tomasz Mieszkowicz
+    email = tomasz.mieszkowicz@gmail.com
+
+[core]
+    whitespace = error
+    preloadindex = true
+    autocrlf = input
+
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+
+[advice]
+    addEmptyPathspec = false
+    pushNonFastForward = false
+    statusHints = false
+
+[blame]
+    coloring = highlightRecent
+    date = relative
+
+[diff]
+    context = 3
+    renames = copies
+    interHunkContext = 10
+
+[log]
+    abbrevCommit = true
+    graphColors  = blue,yellow,cyan,magenta,green,red
+
+[commit]
+    #template = ~/.config/git/template
+    verbose = true
+
+[status]
+    branch = true
+    short = true
+    showStash = true
+    showUntrackedFiles = all
+
+[push]
+    autoSetupRemote = true
+    default = current
+    followTags = true
+
+[pull]
+    rebase = true
+    default = current
+
+[rebase]
+    autoStash = true
+    missingCommitsCheck = warn
+
+[pack]
+    threads = 0
+    windowMemory = 1g
+    packSizeLimit = 1g
