@@ -1,0 +1,140 @@
+{
+    /**
+     * VIM Keymaps & Options
+     */
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<Esc>"
+            ],
+            "when": [
+                "editorFocus"
+            ],
+            "commands": [
+                ":nohl"
+            ],
+            "silent": true
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "vim.incsearch": true,
+    "vim.hlsearch": true,
+    "vim.searchHighlightColor": "#f6ff0080",
+    "vim.searchHighlightTextColor": "#fff",
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.highlightedyank.enable": true,
+    "vim.smartRelativeLine": true,
+    "vim.surround": true,
+    "vim.easymotion": true,
+    /**
+     * Extensions & Performance
+     */
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+    "extensions.ignoreRecommendations": true,
+    /**
+     * Git & Version Control
+     */
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.autoStash": true,
+    "gitlens.showWhatsNewAfterUpgrades": false,
+    "gitlens.defaultGravatarsStyle": "retro",
+    "gitlens.plusFeatures.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "git.openRepositoryInParentFolders": "always",
+    /**
+     * Theme & Aesthetics
+     */
+    "workbench.colorTheme": "One Dark Pro",
+    "oneDarkPro.bold": true,
+    "oneDarkPro.vivid": true,
+    "breadcrumbs.symbolPath": "off",
+    "breadcrumbs.icons": false,
+    "window.systemColorTheme": "dark",
+    "editor.fontFamily": "JetBrains Mono, Fira Code, monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 18,
+    "editor.lineHeight": 20,
+    "editor.cursorBlinking": "solid",
+    "editor.scrollbar.verticalScrollbarSize": 12,
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.location": "top",
+    "window.title": " ",
+    "zenMode.hideStatusBar": false,
+    "window.density.editorTabHeight": "compact",
+    "workbench.editor.showTabs": "multiple",
+    /**
+     * Editor Behavior
+     */
+    "editor.formatOnSave": true,
+    "files.autoSave": "onWindowChange",
+    "editor.linkedEditing": true,
+    "editor.accessibilitySupport": "off",
+    "workbench.layoutControl.enabled": false,
+    "workbench.startupEditor": "welcomePageInEmptyWorkbench",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmPasteNative": false,
+    "workbench.editor.empty.hint": "hidden",
+    /**
+     * Terminal
+     */
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontFamily": "JetBrains Mono, Fira Code",
+    "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        }
+    },
+    "terminal.integrated.scrollback": 5000,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "terminal.integrated.commandsToSkipShell": [
+        "workbench.action.closePanel"
+    ],
+    /**
+     * C# / .NET
+     */
+    "editor.defaultFormatter": "ms-dotnettools.csdevkit",
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-dotnettools.csdevkit"
+    },
+    "csharp.format.enable": true,
+    "csharp.inlayHints.enable": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    /**
+     * General & Safety
+     */
+    "security.workspace.trust.enabled": false,
+    "security.workspace.trust.banner": "never",
+    "security.workspace.trust.untrustedFiles": "open",
+    "security.workspace.trust.startupPrompt": "never",
+    "telemetry.telemetryLevel": "off",
+    "telemetry.feedback.enabled": false,
+    "chat.agent.enabled": false,
+    "inlineChat.lineNaturalLanguageHint": false,
+    "supermaven.enableJumpSuggestions": false,
+    "window.commandCenter": false,
+    "zenMode.fullScreen": false,
+    "zenMode.hideLineNumbers": false,
+    /**
+     * IntelliSense & UX
+     */
+    "editor.suggestSelection": "first",
+    "editor.acceptSuggestionOnEnter": "smart",
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    }
+}
