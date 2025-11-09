@@ -32,7 +32,7 @@
     graphColors  = blue,yellow,cyan,magenta,green,red
 
 [commit]
-    template = %USERPROFILE%/gittemplate
+    template = "C:/Users/tommi/gittemplate"
     #template = ~/.config/git/gittemplate
     verbose = true
 
