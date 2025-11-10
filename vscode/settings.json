@@ -123,12 +123,15 @@
         "strings": true
     },
     /**
-     * General & Safety
+     * Safety
      */
     "security.workspace.trust.enabled": false,
     "security.workspace.trust.banner": "never",
     "security.workspace.trust.untrustedFiles": "open",
     "security.workspace.trust.startupPrompt": "never",
+    /**
+     * General
+     */
     "telemetry.telemetryLevel": "off",
     "telemetry.feedback.enabled": false,
     "chat.agent.enabled": false,
@@ -141,5 +144,7 @@
         "**/.gitignore": true,
         "**/bin": true,
         "**/obj": true
-    }
+    },
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "explorer.compactFolders": false
 }
