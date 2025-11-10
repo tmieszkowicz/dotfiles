@@ -117,6 +117,7 @@
      */
     "editor.suggestSelection": "first",
     "editor.acceptSuggestionOnEnter": "smart",
+    "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.quickSuggestions": {
         "other": true,
         "comments": false,
