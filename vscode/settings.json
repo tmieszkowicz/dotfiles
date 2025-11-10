@@ -105,12 +105,22 @@
      */
     "editor.defaultFormatter": "ms-dotnettools.csdevkit",
     "[csharp]": {
-        "editor.defaultFormatter": "ms-dotnettools.csdevkit"
+        "editor.defaultFormatter": "ms-dotnettools.csharp"
     },
     "csharp.format.enable": true,
     "csharp.inlayHints.enable": true,
     "editor.codeActionsOnSave": {
         "source.organizeImports": "explicit"
+    },
+    /**
+     * IntelliSense & UX
+     */
+    "editor.suggestSelection": "first",
+    "editor.acceptSuggestionOnEnter": "smart",
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
     },
     /**
      * General & Safety
@@ -127,14 +137,9 @@
     "window.commandCenter": false,
     "zenMode.fullScreen": false,
     "zenMode.hideLineNumbers": false,
-    /**
-     * IntelliSense & UX
-     */
-    "editor.suggestSelection": "first",
-    "editor.acceptSuggestionOnEnter": "smart",
-    "editor.quickSuggestions": {
-        "other": true,
-        "comments": false,
-        "strings": true
+    "files.exclude": {
+        "**/.gitignore": true,
+        "**/bin": true,
+        "**/obj": true
     }
 }
