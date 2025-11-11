@@ -38,8 +38,8 @@
     },
     "extensions.ignoreRecommendations": true,
     /**
-     * Git & Version Control
-     */
+    * Git & Version Control
+    */
     "git.autofetch": true,
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
@@ -48,6 +48,8 @@
     "gitlens.defaultGravatarsStyle": "retro",
     "gitlens.plusFeatures.enabled": false,
     "gitlens.codeLens.enabled": false,
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "gitlens.ai.model": "vscode",
     "git.openRepositoryInParentFolders": "always",
     /**
      * Theme & Aesthetics
@@ -71,8 +73,8 @@
     "window.density.editorTabHeight": "compact",
     "workbench.editor.showTabs": "multiple",
     /**
-     * Editor Behavior
-     */
+    * Editor Behavior
+    */
     "editor.formatOnSave": true,
     "files.autoSave": "onWindowChange",
     "editor.linkedEditing": true,
@@ -83,6 +85,7 @@
     "explorer.confirmDelete": false,
     "explorer.confirmPasteNative": false,
     "workbench.editor.empty.hint": "hidden",
+    "explorer.compactFolders": false,
     /**
      * Terminal
      */
@@ -143,9 +146,9 @@
     "zenMode.hideLineNumbers": false,
     "files.exclude": {
         "**/.gitignore": true,
+        "**/.vscode": true,
         "**/bin": true,
         "**/obj": true
     },
     "workbench.secondarySideBar.defaultVisibility": "hidden",
-    "explorer.compactFolders": false
 }
