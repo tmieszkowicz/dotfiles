@@ -150,5 +150,5 @@
         "**/bin": true,
         "**/obj": true
     },
-    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "workbench.secondarySideBar.defaultVisibility": "hidden"
 }
