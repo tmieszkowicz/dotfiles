@@ -52,9 +52,10 @@
     "gitlens.ai.model": "vscode",
     "git.openRepositoryInParentFolders": "always",
     /**
-     * Theme & Aesthetics
-     */
-    "workbench.colorTheme": "One Dark Pro",
+    * Theme & Aesthetics
+    */
+    "workbench.colorTheme": "Dracula Theme",
+    "workbench.iconTheme": "material-icon-theme",
     "oneDarkPro.bold": true,
     "oneDarkPro.vivid": true,
     "breadcrumbs.symbolPath": "off",
@@ -75,16 +76,17 @@
     /**
     * Editor Behavior
     */
-    "editor.formatOnSave": true,
     "files.autoSave": "onWindowChange",
+    "editor.formatOnSave": true,
     "editor.linkedEditing": true,
     "editor.accessibilitySupport": "off",
     "workbench.layoutControl.enabled": false,
     "workbench.startupEditor": "welcomePageInEmptyWorkbench",
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "explorer.confirmPasteNative": false,
-    "workbench.editor.empty.hint": "hidden",
     "explorer.compactFolders": false,
     /**
      * Terminal
@@ -149,6 +151,5 @@
         "**/.vscode": true,
         "**/bin": true,
         "**/obj": true
-    },
-    "workbench.secondarySideBar.defaultVisibility": "hidden"
+    }
 }
