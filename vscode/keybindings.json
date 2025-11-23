@@ -388,5 +388,12 @@
         "key": "space 5",
         "command": "vscode-harpoon.gotoEditor5",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+    },
+    /**
+     * Other keybindings
+     */
+    {
+        "key": "ctrl+,",
+        "command": "-workbench.action.openSettings"
     }
 ]
