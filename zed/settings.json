@@ -1,0 +1,52 @@
+{
+  //AI
+  "disable_ai": true,
+
+  //PRIVACY
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+
+  //VIM
+  "vim_mode": true,
+  "relative_line_numbers": "enabled",
+
+  //THEMES
+  "theme": "Dracula",
+  "icon_theme": "Catppuccin Mocha",
+
+  //FONTS
+  "ui_font_size": 14,
+  "ui_font_family": "FiraCode Nerd Font",
+  "buffer_font_size": 16,
+  "buffer_font_family": "FiraCode Nerd Font",
+  "buffer_line_height": { "custom": 1.5 },
+
+  //TOOLBAR BELOW TABS
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false,
+  },
+
+  //FILE EXPLORER
+  "project_panel": {
+    "git_status": true,
+    "auto_fold_dirs": false,
+    "entry_spacing": "standard",
+  },
+
+  //TABS
+  "tabs": {
+    "file_icons": true,
+    "show_diagnostics": "errors",
+  },
+
+  //SPACE F
+  "file_finder": {
+    "modal_max_width": "medium",
+  },
+
+  "file_scan_exclusions": ["bin", "obj"],
+  "cursor_blink": false,
+}

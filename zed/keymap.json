@@ -1,0 +1,58 @@
+[
+  {
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown",
+
+      "shift-h": "pane::ActivateNextItem",
+      "shift-l": "pane::ActivatePreviousItem",
+
+      "shift-j": null,
+
+      "space q": "pane::CloseActiveItem",
+    },
+  },
+
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "bindings": {
+      "space f": "file_finder::Toggle",
+
+      "space /": "pane::DeploySearch",
+
+      "space e": "workspace::ToggleLeftDock",
+      "space c": "pane::DeploySearch",
+      "space o": "outline::Toggle",
+
+      "space s l": "pane::SplitRight",
+      "space s j": "pane::SplitDown",
+    },
+  },
+
+  // Better escape
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j j": "vim::NormalBefore",
+      "j k": "vim::NormalBefore",
+    },
+  },
+
+  //FILE EXPLORER
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "space e": "workspace::ToggleLeftDock",
+
+      "a": "project_panel::NewFile",
+      "A": "project_panel::NewDirectory",
+      "r": "project_panel::Rename",
+      "d": "project_panel::Delete",
+      "x": "project_panel::Cut",
+      "c": "project_panel::Copy",
+      "p": "project_panel::Paste",
+    },
+  },
+]
