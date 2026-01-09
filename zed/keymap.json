@@ -6,37 +6,48 @@
       "ctrl-k": "workspace::ActivatePaneUp",
       "ctrl-j": "workspace::ActivatePaneDown",
 
-      "shift-h": "pane::ActivateNextItem",
-      "shift-l": "pane::ActivatePreviousItem",
+      "tab": "pane::ActivateNextItem",
+      "shift-tab": "pane::ActivatePreviousItem",
 
       "shift-j": null,
+    },
+  },
 
-      "space q": "pane::CloseActiveItem",
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "tab": "editor::ContextMenuNext",
+      "shift-tab": "editor::ContextMenuPrevious",
+      "j j": "vim::NormalBefore",
+      "j k": "vim::NormalBefore",
     },
   },
 
   {
     "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
     "bindings": {
+      "space w": "workspace::Save",
+      "space q": "pane::CloseActiveItem",
+      "space s": "pane::SplitRight",
+
+      "space e": "project_panel::ToggleFocus",
+      "space g": "git_panel::ToggleFocus",
+      "space t": "terminal_panel::Toggle",
       "space f": "file_finder::Toggle",
-
       "space /": "pane::DeploySearch",
-
-      "space e": "workspace::ToggleLeftDock",
-      "space c": "pane::DeploySearch",
       "space o": "outline::Toggle",
 
-      "space s l": "pane::SplitRight",
-      "space s j": "pane::SplitDown",
+      "space c": "vim::ToggleComments",
+
+      "g i": "editor::GoToImplementation",
     },
   },
 
-  // Better escape
   {
-    "context": "Editor && vim_mode == insert",
+    "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
     "bindings": {
-      "j j": "vim::NormalBefore",
-      "j k": "vim::NormalBefore",
+      "shift-j": "editor::MoveLineUp",
+      "shift-k": "editor::MoveLineDown",
     },
   },
 
@@ -53,6 +64,8 @@
       "x": "project_panel::Cut",
       "c": "project_panel::Copy",
       "p": "project_panel::Paste",
+      //TODO
+      // "l": "project_panel::Open" + "project_panel::ToggleFocus",
     },
   },
 ]
