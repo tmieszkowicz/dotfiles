@@ -13,8 +13,67 @@
   "relative_line_numbers": "enabled",
 
   //THEMES
-  "theme": "Dracula",
-  "icon_theme": "Catppuccin Mocha",
+  "theme": "Aura Soft Dark",
+  "theme_overrides": {
+    "Aura Soft Dark": {
+      "background": "#1c1b22",
+      "editor.background": "#1c1b22",
+      "editor.gutter.background": "#1c1b22",
+      "surface.background": "#1c1b22",
+      "tab.active_background": "#1c1b22",
+      "toolbar.background": "#1c1b22",
+      "scrollbar.track.border": "#1c1b22",
+      "scrollbar.track.background": "#1c1b22",
+      "terminal.ansi.black": "#1c1b22",
+      "terminal.background": "#1c1b22",
+      "editor.document_highlight.write_background": "#00000000",
+      "editor.document_highlight.read_background": "#00000000",
+
+      "border": "#1c1b22",
+      "panel.focused_border": "#4E466E",
+      "players": [{ "cursor": "#bd9dff" }],
+
+      "syntax": {
+        "comment": { "color": "#6d6d6d" },
+        "comment.doc": { "color": "#82e2ff" },
+
+        "keyword": { "color": "#a277ff" },
+        "operator": { "color": "#edecee" },
+
+        "type": { "color": "#82e2ff" },
+        "enum": { "color": "#82e2ff" },
+        "variant": { "color": "#82e2ff" },
+
+        "function": { "color": "#ffca85" },
+        "constructor": { "color": "#ffca85" },
+
+        "string": { "color": "#61ffca" },
+        "string.escape": { "color": "#61ffca" },
+        "string.special": { "color": "#61ffca" },
+
+        "number": { "color": "#61ffca" },
+        "boolean": { "color": "#61ffca" },
+
+        "variable": { "color": "#edecee" },
+        "variable.special": { "color": "#edecee" },
+
+        "property": { "color": "#f694ff" },
+        "attribute": { "color": "#f694ff" },
+
+        "constant": { "color": "#82e2ff" },
+
+        "punctuation": { "color": "#edecee" },
+        "punctuation.bracket": { "color": "#edecee" },
+        "punctuation.delimiter": { "color": "#edecee" },
+
+        "tag": { "color": "#a277ff" },
+        "text.literal": { "color": "#61ffca" },
+        "title": { "color": "#ffca85" },
+      },
+    },
+  },
+
+  "icon_theme": "Base Charmed Icons",
 
   //FONTS
   "ui_font_size": 14,
@@ -22,6 +81,8 @@
   "buffer_font_size": 16,
   "buffer_font_family": "FiraCode Nerd Font",
   "buffer_line_height": { "custom": 1.5 },
+  "agent_ui_font_size": 16,
+  "agent_buffer_font_size": 16,
 
   //TOOLBAR BELOW TABS
   "toolbar": {
@@ -31,9 +92,18 @@
 
   //FILE EXPLORER
   "project_panel": {
+    // "dock": "right",
+    "default_width": 300,
+    "hide_root": true,
     "git_status": true,
     "auto_fold_dirs": false,
     "entry_spacing": "standard",
+    "scrollbar": {
+      "show": "never",
+    },
+    "indent_guides": {
+      "show": "never",
+    },
   },
 
   //TABS
@@ -42,11 +112,57 @@
     "show_diagnostics": "errors",
   },
 
+  "tab_bar": {
+    // "show": false,
+  },
+
+  //UPPER BAR
+  "title_bar": {
+    "show_onboarding_banner": false,
+    "show_project_items": false,
+    "show_branch_name": true,
+    "show_user_menu": false,
+  },
+
+  //LOWER BAR
+  "status_bar": {
+    // "experimental.show": false,
+  },
+
+  //OUTLINE
+  "outline_panel": {
+    "default_width": 300,
+    "indent_guides": {
+      "show": "never",
+    },
+  },
+
+  "scrollbar": {
+    "show": "never",
+  },
+
+  "gutter": {
+    "min_line_number_digits": 0,
+    "folds": false,
+  },
+
+  "indent_guides": {
+    "enabled": false,
+  },
+
   //SPACE F
   "file_finder": {
-    "modal_max_width": "medium",
+    "modal_max_width": "large",
   },
 
   "file_scan_exclusions": ["bin", "obj"],
   "cursor_blink": false,
+  "current_line_highlight": "none",
+  "show_whitespaces": "none",
+  "inline_code_actions": false,
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000,
+    },
+  },
 }

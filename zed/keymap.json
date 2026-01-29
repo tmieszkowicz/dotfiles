@@ -1,4 +1,5 @@
 [
+  //MOVE BETWEEN PANELS
   {
     "bindings": {
       "ctrl-h": "workspace::ActivatePaneLeft",
@@ -6,28 +7,58 @@
       "ctrl-k": "workspace::ActivatePaneUp",
       "ctrl-j": "workspace::ActivatePaneDown",
 
-      "tab": "pane::ActivateNextItem",
-      "shift-tab": "pane::ActivatePreviousItem",
-
       "shift-j": null,
+      "ctrl-q": null,
     },
   },
 
+  //TODO: when menu is visible, esc will close said menu and exit insert mode
+  {
+    "context": "menu && vim_mode == insert",
+    "bindings": {
+      // "esc": null,
+    },
+  },
+
+  //MOVE BETWEEN TABS
+  {
+    "context": "!Terminal && vim_mode != insert",
+    "bindings": {
+      "tab": "pane::ActivateNextItem",
+      "shift-tab": "pane::ActivatePreviousItem",
+    },
+  },
+
+  //CLOSE TERMINAL
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-q": "pane::CloseActiveItem",
+      "ctrl-t": "workspace::ToggleBottomDock",
+    },
+  },
+
+  //VIM EXIT INSERT MODE
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
-      "tab": "editor::ContextMenuNext",
-      "shift-tab": "editor::ContextMenuPrevious",
       "j j": "vim::NormalBefore",
       "j k": "vim::NormalBefore",
     },
   },
 
+  //CYCLE THROUGH MENU ITEMS
   {
-    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "context": "Editor && menu",
     "bindings": {
-      "space w": "workspace::Save",
-      "space q": "pane::CloseActiveItem",
+      "tab": "editor::ContextMenuNext",
+      "shift-tab": "editor::ContextMenuPrevious",
+    },
+  },
+
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
       "space s": "pane::SplitRight",
 
       "space e": "project_panel::ToggleFocus",
@@ -37,14 +68,15 @@
       "space /": "pane::DeploySearch",
       "space o": "outline::Toggle",
 
-      "space c": "vim::ToggleComments",
+      "g c": "vim::ToggleComments",
 
       "g i": "editor::GoToImplementation",
     },
   },
 
+  //MOVE LINES
   {
-    "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
+    "context": "Editor && vim_mode == visual",
     "bindings": {
       "shift-j": "editor::MoveLineUp",
       "shift-k": "editor::MoveLineDown",
