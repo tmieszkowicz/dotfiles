@@ -83,6 +83,7 @@
     },
 
     "workbench.colorCustomizations": {
+        "focusBorder" : "#1c1b22",
         "editor.background": "#1c1b22",
         "sideBar.background": "#1c1b22",
         "activityBar.background": "#1c1b22",
@@ -90,6 +91,7 @@
         "titleBar.inactiveBackground": "#1c1b22",
         "statusBar.background": "#1c1b22",
         "editorGroupHeader.tabsBackground": "#1c1b22",
+        "terminal.background" :"#1c1b22",
 
         "editorSuggestWidget.background": "#1c1b22",
         "editorSuggestWidget.border": "#00000000",
@@ -107,6 +109,9 @@
         "editorOverviewRuler.modifiedForeground": "#0000",
         "editorOverviewRuler.addedForeground": "#0000",
         "editorOverviewRuler.errorForeground": "#0000",
-        "editorOverviewRuler.warningForeground": "#0000"
+        "editorOverviewRuler.warningForeground": "#0000",
+
+        "panel.border": "#1c1b22",
+        "panel.background": "#1c1b22"
     }
 }
